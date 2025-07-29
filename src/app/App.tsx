@@ -1,14 +1,12 @@
-import { StyleSheet, View } from 'react-native'
+import { View } from 'react-native'
+
+import { Form } from '@widgets/form'
+import { styles } from './app.style'
 
 export default function App() {
-	return <View style={styles.container}></View>
+	return (
+		<View style={styles.container}>
+			<Form />
+		</View>
+	)
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-})
